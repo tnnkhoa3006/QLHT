@@ -1,0 +1,6 @@
+[submodule "qlht-backend"]
+	path = qlht-backend
+	url = https://github.com/tnnkhoa3006/qlht-backend.git
+[submodule "qlht-frontend"]
+	path = qlht-frontend
+	url = https://github.com/tnnkhoa3006/qlht-frontend.git

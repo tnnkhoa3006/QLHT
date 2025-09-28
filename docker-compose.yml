@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./qlht_backend
+    container_name: backend_c
+    ports:
+      - "5000:5000"
+    networks:
+      - mynet
+
+  frontend:
+    build:
+      context: ./qlht_frontend
+    container_name: frontend_c
+    ports:
+      - "3000:80"
+    networks:
+      - mynet
+    depends_on:
+      - backend
+
+networks:
+  mynet:
+    driver: bridge
